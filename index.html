@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 3, таблицы</title>
+<!--тег title - это метатег, не забывать заполнять-->
+</head>
+<body>
+    
+    <!--color - цвет, cellpadd - отступ внутри ячейки. Очень важно писать cellpadd... внутри тега table, а не внутри ячейки-->
+    <table border="1" bordercolor="#FF0000" cellpadding="10">
+        <tr>
+            <td>Первая ячейка</td>
+            <td>Вторая ячейка</td>
+        </tr>
+    </table> 
+
+    <br>
+    <br>
+    <br>
+
+     <!--теги colspan и rowspan вставляются внутрь ячеек
+    Это пример объединения по горизонтали-->
+     <table border="1" cellpadding="10">
+    <tr>
+    <!--новый тег align и valign - это выравнивание текста в ячейке, вверху ячейки, слева, справа и т.д. Align - это по вертикали строки, ширина)-->
+        <td colspan="2" align="right">Первая и вторая ячейки</td>
+        <td>Третья ячейка</td>
+    </tr>
+    <tr>
+        <td>Четвертая ячейка</td>
+        <td>Пятая ячейка</td>
+        <td>Шестая ячейка</td>
+    </tr>
+            
+    </table> 
+
+    <br>
+    <br>
+    <br>
+    
+     <!--теги colspan и rowspan вставляются внутрь ячеек
+    Это пример объединения по вертикали-->
+    <table border="1" cellpadding="10">
+        <tr>
+            <td colspan="2">Первая и вторая ячейки</td>
+            <td rowspan="2">Третья ячейка</td>
+        </tr>
+        <!--здесь вставила высоту ячейки-->
+        <tr height="300">
+            <td>Четвертая ячейка</td>
+            <td>Пятая ячейка</td>
+        </tr>
+                
+        </table> 
+
+</body>
+</html>
